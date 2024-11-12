@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Yu'an Lucht
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  Blauwe Piste? Heel misschien een rode piste?
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  De website mooier maken, en tegerlijketijd een goede responsive website maken. Ook wil ik dat deze toegankelijk word
  
 </details>
 
@@ -36,15 +36,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  kawasaki.nl
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="/images/homepage_kawasaki.png" width="375px" alt="Op de homepagina zie je een motor om precies de zijn de z900. Daar kan je gelijk meer informatie over krijgen.
+  Als je naar beneden scrolled krijg je een pagina waar je geholpen wordt met een snelle quizz over wat jij wilt dat je motor heeft, zo helpt de site jou met zoeken naar de motor
+  die het best bij jou past. Daar onder heb je 'offers' die ze nu hebben. en een optie om een proefrit te krijgen. Zo kan je nog verder scrollen voor de optie accessoires, nieuws en race nieuws.>
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="/images/a2_kawasaki.png" width="375px" alt="Op de A2 pagina kun je alle motoren zien die de mogelijkheid hebben om op A2 kenteken gezet kunnen worden. Deze opties zie je in een slide show
+  als je naar beneden scrolled zie je veel verschillende motoren waarbij je meer kan ontdekken.">
  
 </details>
 
