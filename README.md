@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauwe Piste? Heel misschien een rode piste?
 
   #### Je focus:
-  De website mooier maken, en tegerlijketijd een goede responsive website maken. Ook wil ik dat deze toegankelijk word
+  De website mooier maken, en tegerlijketijd toegankelijker voor de mobiele telefoon. 
  
 </details>
 
@@ -60,6 +60,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  -De website is niet te gebruiken op de telefoon
+  -Content mist op telefoon formaat
+  -Scrollen gaat lastig op telefoon
+  -Animaties werken wel maar stroef (scrol animatie)
+  -Code is NIET samantisch
+  -De website is ook niet / lastig te gebruiken met je keyboard
+  -De website gebruikt geen H1's en geen Li/ul/ol
 
 </details>
 
@@ -71,7 +78,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="/images/Frame-1-schetsen.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
@@ -91,18 +98,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Het opzetten van de HTML was goed te doen, ik merk zeker een verschil tuseen samanische coden en alleen maar divjes en classes. Ik heb ook geleerd hoe ik een formulier goed moet schrijven. Css gaat was stroefer omdat ik meer nu niet met divjes moet werken maar andere termen die ik nog niet ken.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Yuan           | Anna               | stefan       | levi             |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  | Hoe ik een     | Afbeelding plaatsen| website goed | en dan ik dat    |
+  | grid correct   |in html met een link| responsive   | dit wil ik zeker |
+  | correct moet   |is dat oke? en of   | inrichten en | ...              |
+    schrijven en    meerdere secties oke  hoe pas ik 
+    toepassen       oke zijn.             een image 
+                                          groote aan op
+                                          beide formaten
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
