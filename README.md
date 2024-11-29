@@ -117,10 +117,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Ik heb geleerd hoe ik grid goed moet gebruiken om tekst onder elkaar te zetten zonder een br
+  - Hoe ik een @fontface moet gebruiken, en om de fonts te downloaden
+  - 
+  
 
 </details>
 
@@ -134,18 +134,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Het begrijpen van Grid vind ik nogsteeds lastig, maar het gaat steeds beter. Wat wel steeds lastiger gaat
+  is ele kleine details, zoals het precies gelijk maken van sections, images ook precies gelijk maken, en het aanpassen van formulieren.
+  ![alt text](image.png)
+  Zoals je ziet, de knop is niet in het center, de artiekelen zijn niet gelijk. etc.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  | Yu'an          | student 2          | student 3    | student 4        |
+  | hoe maak ik de | ---                | ---          | ---              |
+  | fotos gelijk   | en dit             | en ik dit    | en dan ik dat    |
+  | aan elkaar. En | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Hoed houd ik de| ...                | ...          | ...              |
+    forms even
+    groot? bij het
+    kleiner maken.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen

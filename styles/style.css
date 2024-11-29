@@ -2,10 +2,9 @@
 /* CSS REMEDY */
 /**************/
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing:border-box;
+  margin: 0;  
 }
-
-
 
 
 
@@ -17,15 +16,45 @@
 	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
+
+	--color-text:#111;
+	--color-witteh2:white;
+    --color-kawasakikleur: green;
 }
 
+@font-face {
+    font-family: 'Kawasakibasic'; 
+    src: url('../fonts/kawasaki-font-basic.woff2') format('woff2');
+}
 
+@font-face{
+	font-family: 'kawasaki';
+	src: url(../fonts/kawasaki-font.woff2);
+}
 
+@font-face{
+	font-family: 'kawasakisport';
+	src: url(../fonts/kawasaki-sport.woff2);
+}
+
+@font-face{
+	font-family: 'kawasakisportnobold';
+	src: url(../fonts/kawasaki-sport-no-bold.woff2);
+}
+
+@font-face{
+	font-family: 'basicbold';
+	src: url(../fonts/basicbold.woff2);
+}
+
+@font-face{
+	font-family: 'basictext';
+	src: url(../fonts/basictext.woff2);
+}
 
 
 /****************/
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
 
