@@ -1,0 +1,221 @@
+/* *************
+Header 
+************* */
+
+body header h1 img{
+    width: 20%;
+    height: auto;
+}
+
+body header{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    inset: 0 0 auto;
+    padding: 1rem;
+    align-items: center;
+    background-color: var(--color-text);
+}
+
+body nav ul{
+    inset: 0 0 0 0;
+}
+
+body nav ul li{
+    list-style: none;
+}
+
+body header nav ul li a{
+    font-family: 'basicbold';
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2em;
+    height: 1.2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.hamburger span {
+    height: 20%;
+    background-color: var(--color-witteh2);
+}
+
+nav {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-color: var(--color-kawasakikleur);
+    display: none; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    padding: 1rem;
+    border-bottom: 0.1em solid var(--color-witteh2);
+}
+
+nav li:last-child {
+    border-bottom: none;
+}
+
+nav a {
+    color: var(--color-witteh2);
+    text-decoration: none;
+}
+
+nav.active {
+    display: block;
+}
+
+
+/* ************
+FORM #1
+************ */
+
+body main form {
+    margin-top: 5em;
+    background-color: var(--color-ligtgrijs);
+    
+}
+
+body main form fieldset{
+    border: none;
+}
+
+body main form fieldset legend{
+    display: none;
+}
+
+body main form fieldset label{
+    display: none;
+}
+
+body main form fieldset select {
+    width: 100%;
+    padding: 1em;
+    font-size: 1rem;
+    border: none;
+    appearance: none;
+    text-transform: uppercase;
+    color: var(--color-text);
+    /* Hulp van broer */
+    background-repeat: no-repeat;
+    background-size: 1em;
+}
+
+
+
+/* *******************
+KERNWAARDEN STUK 
+******************* */
+
+body main section:nth-of-type(1) span {
+    color: var(--color-kawasakikleur);
+    font-size: 2rem;
+    font-family: 'basicbold';
+}
+
+body main section:nth-of-type(1) h2{
+    padding: 2em;
+    font-family: 'basicbold';
+    font-size: 2em;
+}
+
+body main section:nth-of-type(1) blockquote{
+    font-family: 'basicbold';
+    padding: 2em;
+    line-height: 1.8em;
+    max-width: 52ch;
+}
+
+body main section:nth-of-type(1) p{
+    font-family: 'basictext';
+    padding: 2em;
+    line-height: 2.2em;
+    max-width: 52ch;
+}
+
+body main section:nth-of-type(1) img{
+    width: 100%;
+}
+
+@media (min-width: 650px){
+    body main section:nth-of-type(1) img{
+        width: 50%;
+    }
+
+    body main section:nth-of-type(1) blockquote{
+        font-family: 'basicbold';
+        padding: 2em;
+        max-width: 52ch;
+        font-size: 1.4em;
+    }
+}
+
+
+
+
+/* *******************
+KERNWAARDEN STUK #2
+******************* */
+body main section:nth-of-type(2){
+    background-color: var(--color-ligtgrijs2);
+    padding: 1em;
+    width: 90%;
+    margin: auto;
+    margin-top: 2em;
+}
+
+
+body main section:nth-of-type(2) h2{
+    color: var(--color-kawasakikleur);
+    font-family: 'kawasakisport';
+    font-size: 5em;
+    margin-top: -.8em;
+    margin-left: 1em;
+}
+
+body main section:nth-of-type(2) h3{
+    color: var(--color-witteh2);
+    font-family: 'kawasakibasic';
+    text-align: left;
+    margin-top: 2em;
+}
+
+
+/* *******************
+KERNWAARDEN STUK #3
+******************* */
+
+body main section:nth-of-type(3){
+    align-content: center;
+    
+}
+
+body main section:nth-of-type(3) h2{
+    display: none;
+}
+
+body main section:nth-of-type(3) img{
+    width: 90%;
+    margin-top: 4em;
+}
+
+body main section:nth-of-type(3) p{
+    font-family: 'basictext';
+    padding: 2em;
+    line-height: 2.2em;
+    max-width: 52ch;
+    background-color: var(--color-ligtgrijs);
+}

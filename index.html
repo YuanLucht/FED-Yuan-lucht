@@ -28,11 +28,14 @@
         </button>
         
         <nav>
-            <ul class="nav-links">
+            <ul>
                 <li><a href="">Producten</a></li>
                 <li><a href="">Accessoires & Onderdelen</a></li>
                 <li><a href="">Race</a></li>
                 <li><a href="">Service</a></li>
+				<li><a href="">Over Kawasaki</a></li>
+				<li><a href="">Dealers</a></li>
+				<li><a href="">Nieuws</a></li>
             </ul>
         </nav>
 	</header>
@@ -40,7 +43,7 @@
 	<main>
 		<section>
 			<h2>NEW Z900 Performance. Refinement. Sugomi.</h2>
-			<a href="z900.html">Lees meer</a>
+			<a href="kernwaarden.html">Lees meer</a>
 		</section>
 
 		<section>
@@ -79,16 +82,16 @@
 					<legend>Aantal CC</legend>
 					<label>
 						<input type="range" name="cc" min="125" max="1200" value="125" id="ccRange">
-						<output>125</output>
 					</label>
+					<output>125</output>
 				</fieldset>
 				
 				<fieldset>
 					<legend>Prijs</legend>
 					<label>
 						<input type="range" name="price" min="0" max="20000" value="0" id="priceRange">
-						<output>0</output>
 					</label>
+					<output>0</output>
 				</fieldset>
 		
 				<button type="submit">Zoek!</button>
@@ -102,43 +105,44 @@
 				<h3>Kids fun promo</h3>
 				<p>Ontvang nu €500,- voordeel bij aanschaf van een KFX90, KLX110R of KLX140R!</p>
 				<a href="" aria-label="onydek meer over kids fun promo">Ontdek meer</a>
-				<img src="images/kind-cross1.jpg" alt="Foto van kinderen die cross rijden">
-				<!-- Kind crossride image bron: https://sengegraphics.com/blog/dirt-bike/top-5-reasons-dirt-bike-racing-is-beneficial-for-kids -->
+				<img src="images/voordeel-kids1.jpg" alt="Foto van kinderen die cross rijden">
 			</article>
 
 			<article>
 				<h3>Extra touring voodeel</h3>
 				<p>De hightech Ninja 1000SX en Versys 1000 modellen zijn leiders in hun segment. Dit seizoen kun je deze modellen nog cpmpleter maken met de extra voordelige tourer pakketten.</p>
 				<a href="">Ontdek meer</a>
-				<img src="images/touring-voordeel.jpeg.jpg" alt="Foto van een man die aan het touren is op zijn motor in een bos">
-				<!-- Touring foto bron: https://www.suzuki.nl/motoren/modellen/adventure-sport/ -->
+				<img src="images/voordeel-tour1.jpg" alt="Foto van twee motor rijders die aan het touren zijn">
 			</article>
 
-			<button>Bekijk alles</button>
+			<a>Bekijk alles</a>
 		</section>
 
 		<section>
 			<h2>Maak een proefrit</h2>
-			<fieldset>
-				<legend>Vind de dichtsbijzijnde dealer</legend>
-				postcode: <input type="text">
+			<form>
+				<fieldset>
+					<legend>Vind de dichtsbijzijnde dealer</legend>
+					<label>Plaats of postcode:</label>
+					<input type="text" name="postcode" placeholder="Vul hier je postcode of plaats in">
 
-				<label for="Motor-type">Selecteer type motor</label>
-				<select name="Motor type" id="motortype">
-					<option value="Zx12r">Sport</option>
-					<option value="Zx10r">Tour</option>
-					<option value="Zx6r">Cruiser</option>
-					<option value="H2r">Crosser</option>
-					<option value="H2">Off road</option>
-					<option value="Ninja600">Moto cross</option>
-					<option value="Ninja500">Choppers</option>
-					<option value="Ninja7">Street bikes</option>
-					<option value="Zx4rr">Naked bikes</option>
-					<option value="Bekijk-alle">Bekijk alle</option>
-				</select>
-			</fieldset>
+					<label>Selecteer type motor</label>
+					<select name="Motor type" id="motortype">
+						<option value="Zx12r">Sport</option>
+						<option value="Zx10r">Tour</option>
+						<option value="Zx6r">Cruiser</option>
+						<option value="H2r">Crosser</option>
+						<option value="H2">Off road</option>
+						<option value="Ninja600">Moto cross</option>
+						<option value="Ninja500">Choppers</option>
+						<option value="Ninja7">Street bikes</option>
+						<option value="Zx4rr">Naked bikes</option>
+						<option value="Bekijk-alle">Bekijk alle</option>
+					</select>
+				</fieldset>
+			</form>	
 
-			<button>Vind een dealer</button>
+			<a>Vind een dealer</a>
 		</section>
 
 		<section>
@@ -146,39 +150,42 @@
 
 			<h3>De details maken het verschil</h3>
 			<p>Hoge prestaties en kwaliteit, zonder compromissen</p>
-			
-			<img src="images/tank-sticker.jpg" alt="Foto van een Kawasaki tank sticker">
-			<img src="images/motor-seat.jpg" alt="Foto van een Kawasaki motorseat">
-			<img src="images/levers.jpg" alt="Foto van de Kawasaki handvaten">
 
+			<article>
+				<img src="images/tank-sticker.jpg" alt="Foto van een Kawasaki tank sticker">
+				<img src="images/motor-seat.jpg" alt="Foto van een Kawasaki motorseat">
+				<img src="images/levers.jpg" alt="Foto van de Kawasaki handvaten">
+			</article>
 			<!-- lever foto bron: https://www.gfp-store.co.za/product/lightech-folding-brake-clutch-levers-klev125j-kawasaki-zx10-2021-2023/ -->
 			<!-- tank sticker foto bron: https://www.kawasaki.nl/nl/accessories/motoren/bescherming/tankpad_z900?UidCat=0547WlhZXFhaWllYWFlYWVhcW1pZRgYERSYk&UidSubCat=0605WlhZXFhaWllYWFpfWl9RWl9eWlFdRgYERSYk&Uid=08C4Dg5dUVoNWFtfDVsOXApbWQoKDlFQC15ZXVleXg1YWgs -->
 			<!-- motor seat foto bron:https://www.amazon.nl/-/en/Motorcycle-Mudguard-License-Accessories-Kawasaki/dp/B0CQSZWQQH -->
 			
+			<a>Ontdek alle accessoiresen</a>
 		</section>
 
 
 		<section>
 			<h2>Nieuws</h2>
+			
 				<article>
-					<h3>Kawasaki introduceert de nieuwe Z900 voor 2025</h3>
-					<p>De nieuwe Kawasaki Z900 is op 2 november 2024 aangekondigd door Kawasaki!</p>
+					<h3>Kawasaki introduceert de nieuwe Z900 voor 2025.</h3>
 					<a href="">Lees meer</a>
 				</article>
+				<img src="images/z900-nieuws.jpg" alt="foto van de nieuwe z900 motor met een witte achtergrond">
 
 				<article>
 					<h3>Versys 1100 wordt officeel de begeleidingsmotor van de tour de france.</h3>
-					<p>In de 2025 tour de france is de Kawasaki Versys 1100 officeel aangekondigd als de begeleidingsmotor van de tour de france.</p>
 					<a href="">Lees meer</a>
 				</article>
+				<img src="images/z900-nieuws2.jpg" alt="foto van de nieuwe z900 motor met een donkere smoke achtergrond">
 
 				<article>
-					<h3>Nieuwe kleurstellingen voor 2025 Ninja ZX-10R en RR</h3>
-					<p>De Kawasaki Ninja ZX-10R en ZX-10RR krijgen begin 2025 een paar nieuwe kleurstellingen!</p>
+					<h3>Nieuwe kleurstellingen voor 2025 Ninja ZX-10R en RR.</h3>
 					<a href="">Lees meer</a>
 				</article>
+				<img src="images/tour-de-france.jpg" alt="een actie foto van de kawasaki motor, in de tour de france">
 
-				<a href="">Bekijk alles</a>
+				<a>Bekijk alles</a>
 		</section>
 	</main>
 
