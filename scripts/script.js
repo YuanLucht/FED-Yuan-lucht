@@ -11,7 +11,6 @@ const inPutCc = document.querySelector('fieldset:nth-of-type(3) input');
 const inPutEuro = document.querySelector('fieldset:nth-of-type(4) input');
 
 
-
 // Hulp van broer
 function toggleMenu() { 
     if (hamburger.classList.contains('active')) {

@@ -37,44 +37,112 @@
 *, *::after, *::before {
 	box-sizing:border-box;
 	margin: 0;  
-  }
+}
   
   
-  
-  
-  /*********************/
-  /* CUSTOM PROPERTIES */
-  /*********************/
-  :root {
-	  /* startje */
-	  --color-text:#111;
-	  --color-background:#eee;
-  
-	  --color-witteh2:white;
-	  --color-kawasakikleur: #43b02a;
-	  --color-wit: white;
-	  --color-donkergrijs: #333;
-	  --color-ligtgrijs: #ccc ;
-	  --color-ligtgrijs2: #666;
-	  --color-grijsaccent: #bbb;
-	  --color-donkergrijsaccent: #222;
-	  --color-witaccent: #f5f5f6;
-  }
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:#ffffff;
+	--color-zwarteh2: black;
+	--color-witteh2:white;
+	--color-kawasakikleur: #43b02a;
+	--color-witteaccent: white;
+	--color-donkergrijsinfo: #333;
+	--color-ligtgrijsbg: #ccc ;
+	--color-ligtgrijsfooter: #666;
+	--color-grijsaccent: #bbb;
+	--color-donkergrijsaccent: #222;
+	--color-accentred: red;
+	--color-witteform: white;
+	--color-zwarteheader: black;
+	--color-wittetext:white;
+}	
 
-  
-  
-  @media (prefers-color-scheme: dark) {
-	  :root {
-		  --color-text: white; 
-		  --color-background: black; 
-	  
-		  --color-heading: black; 
-		  --color-kawasakikleur: #43b02a; 
-		  --color-light-text: black; 
-		  --color-dark-gray: #b8b6b6; 
-	  }
-  }
+/* @media (prefers-color-scheme: dark) {
+	:root body{
+		--color-zwarteh2: white;
+		background-image: url(../images/background-img-dark.jpg);
+	}
+} */
 
 
+
+/* **********
+footer
+********** */
+
+footer {
+    font-family: 'kawasaki';
+    color: var(--color-witteaccent);
+    text-align: center;
+	width: 100%;
+}
+
+footer section:nth-of-type(1) {
+    background-color: var(--color-ligtgrijsfooter);
+    padding: 1em;
+}
+
+footer section:nth-of-type(1) h4 {
+    color: var(--color-kawasakikleur);
+    font-weight: bold;
+    margin-bottom: 1.2em;
+}
+
+footer section:nth-of-type(1) ul li{
+    color:var(--color-witteaccent);
+    margin: 1.2em;
+    font-size: 1.5rem;
+    text-decoration: none;
+	list-style-type: none;
+}
+
+footer section:nth-of-type(2) {
+    background-color: var(--color-donkergrijsaccent);
+    padding: 1em;
+}
+
+footer section:nth-of-type(2) h4 {
+    margin: 1.2em;
+    font-size: 0.9rem;
+}
+
+footer section:nth-of-type(2) ul li a{
+    color: var(--color-witteaccent);
+    text-decoration: none;
+    font-size: 0.9rem;
+	list-style-type: none;
+	font-family: 'basictext';
+	margin: 1em;
+}
+
+footer section:nth-of-type(2) ul li{
+    color: var(--color-witteaccent);
+	list-style-type: none;
+}
+
+
+footer section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ***********
+Tab styling
+************** */
+
+:focus{
+	color: var(--color-kawasakikleur);
+	outline-color: var(--color-kawasakikleur);
+	outline-style: dashed;
+	outline-offset: .2em;
+	outline-width: .2em;
+}
 
 

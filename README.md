@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauwe Piste? Heel misschien een rode piste?
 
   #### Je focus:
-  De website mooier maken, en tegerlijketijd toegankelijker voor de mobiele telefoon. 
+  De website toegankelijker voor de mobiele telefoon maken.
  
 </details>
 
@@ -39,15 +39,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   kawasaki.nl
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  Kawasaki nederland https://www.kawasaki.nl/nl/products
   <img src="/images/homepage_kawasaki.png" width="375px" alt="Op de homepagina zie je een motor om precies de zijn de z900. Daar kan je gelijk meer informatie over krijgen.
   Als je naar beneden scrolled krijg je een pagina waar je geholpen wordt met een snelle quizz over wat jij wilt dat je motor heeft, zo helpt de site jou met zoeken naar de motor
   die het best bij jou past. Daar onder heb je 'offers' die ze nu hebben. en een optie om een proefrit te krijgen. Zo kan je nog verder scrollen voor de optie accessoires, nieuws en race nieuws.>
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="/images/a2_kawasaki.png" width="375px" alt="Op de A2 pagina kun je alle motoren zien die de mogelijkheid hebben om op A2 kenteken gezet kunnen worden. Deze opties zie je in een slide show
-  als je naar beneden scrolled zie je veel verschillende motoren waarbij je meer kan ontdekken.">
+  Kawasaki kernwaarden https://www.kawasaki.nl/nl/about_kawasaki/Kernwaarden?Uid=0B39XF4OX1ENCV4KXVxeXAkLXAoLDlpQDVsMDF4NDlAOUF1GBgRFJiQ
+  ![Op de kenmerken pagina kun je informatie vinden over de oude kenmerken van kawasaki, en hun oude fabriek](image-2.png)
  
 </details>
 
@@ -61,7 +60,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
   -De website is niet te gebruiken op de telefoon
-  -Content mist op telefoon formaat
+  -Content mist op telefoon formaat ![alt text](image-3.png)
   -Scrollen gaat lastig op telefoon
   -Animaties werken wel maar stroef (scrol animatie)
   -Code is NIET samantisch
@@ -119,7 +118,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   - Ik heb geleerd hoe ik grid goed moet gebruiken om tekst onder elkaar te zetten zonder een br
   - Hoe ik een @fontface moet gebruiken, en om de fonts te downloaden
-  - 
+  - ![screenshot van @fontface](image.png) ![screenshot van grid](image-1.png)
   
 
 </details>
@@ -135,9 +134,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   Het begrijpen van Grid vind ik nogsteeds lastig, maar het gaat steeds beter. Wat wel steeds lastiger gaat
-  is ele kleine details, zoals het precies gelijk maken van sections, images ook precies gelijk maken, en het aanpassen van formulieren.
-  ![alt text](image.png)
-  Zoals je ziet, de knop is niet in het center, de artiekelen zijn niet gelijk. etc.
+  is kleine details, zoals het precies gelijk maken van sections, images ook precies gelijk maken, en het aanpassen van formulieren.
+  ![knoppen die niet onder aansluiten](image-4.png)
 
 
   ### Agenda voor meeting
@@ -153,10 +151,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
     kleiner maken.
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  Ik liep tegen een paar problemen aan, sommige elementen waren niet in het midden terwijl mijn margin auto en place content op center stond
 
-  - punt 1
-  - punt 2
+  - Ik heb kleine fouten gemaakt zoals procenten gebruikt op verkeerde plekken waardoor dingen niet goed mee scalen
+  - Grid gaat ook weer steeds beter nu ik het goed uitgelegd heb gekregen.
   - nog een punt
 - ...
 
@@ -172,7 +170,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Uit mijn test is er uit gekomen dat mijn hele website te gebruiken is met de Tab knop en de screenreader,
+  Ook is mijn code samantisch en die van Kawasaki nederland niet. Hun site is daarnaast ook niet goed
+  responsive, wanneer ik mijn scherm verklein op hun website, mis ik content, zoals hun video en de 
+  "zoek jou perfecte motor" form is niet beschrikbaar. Bij mij uiteraard wel.
 
 </details>
 
@@ -186,25 +187,30 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Mijm website is goed opweg, de screenreader en het tabben door mijn website gaat goed en lukt. echter is nogsteeds mijn hamburger menu niet zichtbaar. Ik weet nogsteeds niet waarom, ik ben hier al 2 weken mee bezig.
+  Mijn tweede pagina is bijna klaar en mijn footer is af.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Yuan           | levi               | Anna         | stefan           |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  | Voor mijn tw-  | Waarom zijn A's    | Hulp met gr- | hulp bij het     |
+  | eede pagina is | niet weken in zijn | id, om het   | correct maken    |
+  | is het oke als | ham burger menu    | responsive   | van zijn HTML    |
+    als ik 1 pagina                       te maken       select menu
+    maak maar wel
+    het menu uitwerk
+    en responsive 
+    maak?
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - Het is oke als ik 1 pagina maar maar wel het menu responsive maak.
+  - hoe ik een image met clip-path:polygon kan aanpassen.
+  - 
   - ...
 
 </details>
@@ -223,13 +229,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb geleerd hoe ik grid als basis kan gebruiken, ook heb ik geleerd hoe ik een plaatje kan editen in 
+  CSS, (met clip-path). Dit zijn 2 hele handige dingen om in mijn vrije tijd te kunnen gebruiken en verder 
+  te leren. Over het algemeen heb ik ook geleerd hoe mijn HTML goed samantisch moet zijn en heb ik een veel
+  betere basis van CSS kunnen ontwikkelen.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Grid vond ik heel lastig, ik snap het heel eerlijk gezegd nog steeds niet 100% maar ik heb een basis.
+  Ik heb bij grid heel veel ondersteuning moeten krijgen om het een beetje kunnen begrijpen, maar het 
+  gaat alleen maar beter komen vanaf hier.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
@@ -247,8 +258,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. MDN
+  2. Mijn broer
+  3. Gesprekken op school
+  4. Student assistenten
+  5. AI (chat gpt)
 
 </details>
