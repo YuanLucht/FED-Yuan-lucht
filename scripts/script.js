@@ -10,6 +10,7 @@ const outPutEuro = document.querySelector('fieldset:nth-of-type(4) output');
 const inPutCc = document.querySelector('fieldset:nth-of-type(3) input');
 const inPutEuro = document.querySelector('fieldset:nth-of-type(4) input');
 
+const backToTopBtn = document.querySelector('footer button')
 
 // Hulp van broer
 function toggleMenu() { 
@@ -39,5 +40,13 @@ function updateEuro(){
 }
 
 
+
+
+backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
 
 
