@@ -28,6 +28,11 @@
 	src: url(../fonts/basictext.woff2);
 }
 
+@font-face{
+	font-family: 'kawasakimain';
+	src: url(../fonts/kawasakimain.woff2);
+}
+
 
 
 
@@ -43,31 +48,32 @@
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
+
+
 :root {
-	/* startje */
+	color-scheme: light dark;
+
+	--color-textLD:light-dark(black, white);
+	--color-sectionArticlebg:light-dark(#fff, #222);
+	--color-kopjes:light-dark(black, white);
+	--color-reversedTextColor:light-dark(white, black);
+	--color-headers:light-dark(black, white);
+	--color-buttons:light-dark(black,white);
+	--color-bg:light-dark(#fff, black);
+	--color-accentKernwaarden:light-dark(#ccc, #222);
+
 	--color-text:#111;
 	--color-background:#ffffff;
-	--color-zwarteh2: black;
-	--color-witteh2:white;
 	--color-kawasakikleur: #43b02a;
-	--color-witteaccent: white;
-	--color-donkergrijsinfo: #333;
-	--color-ligtgrijsbg: #ccc ;
-	--color-ligtgrijsfooter: #666;
-	--color-grijsaccent: #bbb;
-	--color-donkergrijsaccent: #222;
-	--color-accentred: red;
-	--color-witteform: white;
-	--color-zwarteheader: black;
-	--color-wittetext:white;
+	--color-mainAccent: #333;
+	--color-secondAccent: #222;
+	--color-thirdAccent: white;
+	--color-buttonAccent: #ccc;
+	--color-lightText:white;
+	--color-placeholderTime: #bbb;
+	--color-footerLight: #666;
 }	
 
-/* @media (prefers-color-scheme: dark) {
-	:root body{
-		--color-zwarteh2: white;
-		background-image: url(../images/background-img-dark.jpg);
-	}
-} */
 
 
 
@@ -77,13 +83,13 @@ footer
 
 footer {
     font-family: 'kawasaki';
-    color: var(--color-witteaccent);
+    color: var(--color-lightText);
     text-align: center;
 	width: 100%;
 }
 
 footer section:nth-of-type(1) {
-    background-color: var(--color-ligtgrijsfooter);
+    background-color: var(--color-footerLight);
     padding: 1em;
 }
 
@@ -94,25 +100,25 @@ footer section:nth-of-type(1) h4 {
 }
 
 footer section:nth-of-type(1) ul li{
-    color:var(--color-witteaccent);
+    color:var(--color-lightText);
     margin: 1.2em;
     font-size: 1.5rem;
     text-decoration: none;
 	list-style-type: none;
 }
 
-footer section:nth-of-type(2) {
-    background-color: var(--color-donkergrijsaccent);
+footer section:nth-of-type(3) {
+    background-color: var(--color-secondAccent);
     padding: 1em;
 }
 
-footer section:nth-of-type(2) h4 {
+footer section:nth-of-type(3) h4 {
     margin: 1.2em;
     font-size: 0.9rem;
 }
 
-footer section:nth-of-type(2) ul li a{
-    color: var(--color-witteaccent);
+footer section:nth-of-type(3) ul li a{
+    color: var(--color-lightText);
     text-decoration: none;
     font-size: 0.9rem;
 	list-style-type: none;
@@ -120,8 +126,8 @@ footer section:nth-of-type(2) ul li a{
 	margin: 1em;
 }
 
-footer section:nth-of-type(2) ul li{
-    color: var(--color-witteaccent);
+footer section:nth-of-type(3) ul li{
+    color: var(--color-lightText);
 	list-style-type: none;
 }
 
@@ -130,6 +136,65 @@ footer section {
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+footer section:nth-of-type(2){
+	display: none;
+}
+
+
+@media only screen and (min-width: 850px) {
+
+	footer section:nth-of-type(1) {
+		display: none;
+	}
+	
+	footer section:nth-of-type(2){
+		display: grid;
+		background-color: var(--color-text);
+		width: 100%;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		padding: 1em;
+	}
+
+	footer section:nth-of-type(2) h4{
+		color: var(--color-kawasakikleur);
+		font-family: 'kawasakisport';
+		text-transform: uppercase;
+		grid-row: 1;
+		margin-top: 2em;
+		text-align: left;
+	}
+
+	footer section:nth-of-type(2) li{
+		list-style: none;
+		text-decoration: none;
+		color: var(--color-lightText);
+		margin-bottom: 1.5em;
+		text-align: left;
+	}
+
+	footer section:nth-of-type(2) li a{
+		text-decoration: none; 
+		color: var(--color-lightText);
+		margin-bottom: 1em;
+		font-family: 'basictext';
+		text-transform: none;
+		font-size: smaller;
+	}
+
+}
+
+footer button{
+    border: none;
+    color: var(--color-kawasakikleur);
+    cursor: pointer;
+    font-size: 1em;
+	background: none;
+    font-family: 'kawasakimain';
+	padding: 1em;	
+
 }
 
 

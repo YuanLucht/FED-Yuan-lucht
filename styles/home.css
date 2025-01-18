@@ -27,7 +27,7 @@ body nav ul li{
 }
 
 body header nav ul li a{
-    font-family: 'basicbold';
+    font-family: 'kawasakimain';
 }
 
 .hamburger {
@@ -39,20 +39,20 @@ body header nav ul li a{
     background: none;
     border: none;
     cursor: pointer;
-    z-index: 2;
+    z-index: 3;
 }
 
 .hamburger span {
     width: 100%;
     height: 20%;
-    background-color: var(--color-witteaccent);
+    background-color: var(--color-thirdAccent);
 }
 
 nav {
     position: absolute;
     top: 50%;
     right: 0;
-    background-color: var(--color-kawasakikleur);
+    background-color: var(--color-mainAccent);
     display: none; 
     z-index: 2; 
 }
@@ -61,11 +61,12 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+
 }
 
 nav li {
     padding: 1rem;
-    border-bottom: 0.1em solid var(--color-witteaccent);
+    border-bottom: 0.1em solid var(--color-thirdAccent);
 }
 
 nav li:last-child {
@@ -73,12 +74,83 @@ nav li:last-child {
 }
 
 nav a {
-    color: var(--color-witteaccent);
+    color: var(--color-thirdAccent);
     text-decoration: none;
+}
+
+nav ul label{
+    display: none;
+}
+
+nav ul input{
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+    font-size: 1rem;
+    border: none;
+    background-color: var(--color-secondAccent);
+    color: var(--color-kawasakikleur);
 }
 
 nav.active {
     display: block;
+}
+
+@media only screen and (min-width: 850px) {    
+	nav {
+        display: flex;
+        justify-content: flex-start; 
+        padding: 0;
+        background: none; 
+        
+    }
+    
+    .hamburger {
+        display: none; 
+    }
+
+    nav li {
+        border-bottom: none;
+    }
+
+    nav ul{
+        display: flex;
+        margin: 1em;
+        gap: 1em;
+    }
+    
+    nav ul li a:hover{
+        color: var(--color-kawasakikleur);
+    }
+
+    nav ul input{
+        position: absolute;
+        top: -2em;
+        width: 80%;
+        right: 2.5em;
+    }
+}
+
+@media only screen and (min-width: 1420px){
+    body header{
+        display: flex;
+    }
+
+    nav ul input{
+        display: flex;
+        position: relative;
+        top: -2.6em;
+        height: 3em;
+        right: 0;
+    }
+
+    nav ul li a{
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        top: -3em;
+    }
+
 }
 
 
@@ -89,23 +161,20 @@ Main styling
 body{
     background-image: url(../images/background-img.jpg);
     background-size: cover;
-    
 }
 
 body main section:nth-of-type(1){
-    background-image: url(../images/z900.jpg);
-    background-size: cover;
-    min-height: 25em;
+    background-image: url(../images/header-img.jpg);
+    background-size:100%;
     padding: 2em;
 }
 
 body main section:nth-of-type(1) h2{
-    color: var(--color-witteh2);
-    /* font-family: ; */
     padding-top: 15%;
     display: grid;
     grid-template-columns: min-content;
     line-height: 1.5;
+    color: var(--color-lightText);
 }
 
 body main section:nth-of-type(1) a{
@@ -115,12 +184,11 @@ body main section:nth-of-type(1) a{
 }
 
 h2 {
-    font-family: 'kawasakisportnobold';
-    color: var(--color-zwarteh2);
+    font-family: 'kawasakimain';
 }
 
 a{
-    font-family: 'basicbold';
+    font-family: 'kawasakimain';
     text-transform: uppercase;
 }
 
@@ -140,20 +208,30 @@ main section:nth-of-type(2) form{
     /* HULP VAN STUDENT ASSISTENT */
     grid-template-columns: 1fr 1fr;
     
-    background-color: var(--color-witteaccent);
+    background-color: var(--color-sectionArticlebg);
     padding: 2em;
     filter: drop-shadow(0.1rem 0.1rem 20px  rgba(0, 0, 0, 0.7));
 }
 
+
 main section:nth-of-type(2) h2{
     text-align: center;
     margin-bottom: 5%;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: .5em;
+    margin-top: 3em;
+    color: var(--color-headers);
+}
 
-    font-size: 2rem;
+main section:nth-of-type(2) h3{
+    text-align: center;
+    margin-bottom: 5%;
+    font-family: 'kawasakimain';
     text-transform: uppercase;
     margin-bottom: 1.5em;
-    text-align: center;
-    margin-top: 3em;
+    margin-left: 6%;
+    margin-right: 6%;
 }
 
 main section:nth-of-type(2) form fieldset{
@@ -180,9 +258,28 @@ main section:nth-of-type(2) form button{
 
 main section:nth-of-type(2) form fieldset legend{
     color: var(--color-kawasakikleur);
-    font-family: 'kawasakibasic';
+    font-family: 'kawasakimain';
     text-transform: uppercase;
     font-weight: bold;
+}
+
+@media only screen and (min-width: 900px) {    
+	main section:nth-of-type(2) form{
+        display: flex;
+        max-width: 100%;
+        justify-content: space-between;
+        padding-bottom: 4em;
+    }
+
+    main section:nth-of-type(2) form button{
+        position: absolute;
+        bottom: -1em;
+        left: 38%;
+    }
+    main section:nth-of-type(2) form button:nth-of-type(2){
+        position: absolute;
+        left: 53%;
+    }
 }
 
 
@@ -204,10 +301,10 @@ main section:nth-of-type(2) button {
 
 /* "type="reset" van MDN" */
 main section:nth-of-type(2) button[type="reset"] {
-    background-color: var(--color-witteaccent);
+    background-color: var(--color-buttonAccent);
     border: none;
-    font-family: 'kawasakibasic';
-
+    font-family: 'kawasakimain';
+    color: var(--color-text);
     font-size: 1rem;
     text-transform: uppercase;
     padding: 0.8em 1.5em;
@@ -215,14 +312,16 @@ main section:nth-of-type(2) button[type="reset"] {
 
 main section:nth-of-type(2) button[type="submit"] {
     background-color: var(--color-kawasakikleur);
-    color: var(--color-witteaccent);
+    color: var(--color-thirdAccent);
     border: none;
-    font-family: 'kawasakibasic';
+    font-family: 'kawasakimain';
 
     font-size: 1rem;
     text-transform: uppercase;
     padding: 0.8em 1.5em;
 }
+
+
 
 
 
@@ -238,7 +337,7 @@ main section:nth-of-type(3){
 
 main section:nth-of-type(3) h2{
     text-align: center;
-
+    color: var(--color-text);
     font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 1em;
@@ -249,7 +348,7 @@ main section:nth-of-type(3) h2{
 main section:nth-of-type(3) article{
     display: grid;
     text-align: center;
-    background-color: var(--color-witteaccent);
+    background-color: var(--color-sectionArticlebg);
     height: 28em;
 
     max-width: 25em;
@@ -259,8 +358,7 @@ main section:nth-of-type(3) article{
 }
 
 main section:nth-of-type(3) article h3{
-    color: var(--color-kawasakikleur);
-    font-family: 'kawasakisportnobold';
+    font-family: 'kawasakimain';
     padding-top: 1.5em;
     text-transform: uppercase;
     font-weight: bold;
@@ -284,7 +382,7 @@ main section:nth-of-type(3) article img{
 @media only screen and (min-width: 750px) {    
 	main section:nth-of-type(3) {
         grid-template-columns: 1fr 1fr;
-    }
+    }   
     main section:nth-of-type(3) h2{
         grid-column: 1/-1;
     }
@@ -293,13 +391,28 @@ main section:nth-of-type(3) article img{
 main section:nth-of-type(3) a{
     margin-top: 2em;
     padding: 0.5em 1em;
+    cursor: pointer;
+    margin: auto;
+    color: var(--color-kawasakikleur);
+    font-family: 'kawasakimain';
+    text-align: center;
+    grid-column: 1/-1;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+main section:nth-of-type(3) a:last-child{
+    margin-top: 2em;
+    padding: 0.5em 1em;
     font-size: 1em;
     cursor: pointer;
     margin: auto;
-    background-color: var(--color-kawasakikleur);
+    background-color: var(--color-buttons);
     border: none;
-    color: var(--color-witteaccent);
-    font-family: 'kawasakibasic';
+    color: var(--color-reversedTextColor);
+    font-family: 'kawasakimain';
     z-index: 1;
     text-align: center;
     grid-column: 1/-1;
@@ -318,16 +431,22 @@ Styling form #3
 ********** */
 
 main section:nth-of-type(4){
-    max-width: 90%;
-    margin: auto;
+    max-width: 95%;
+}
+
+main section:nth-of-type(4) img{
+    position: absolute;
+    top: 0;
+    left: 9.8em;
+    margin-top: 1em;
 }
 
 main section:nth-of-type(4) form{
     display: grid;
     place-content: center;
-    background-color: var(--color-donkergrijsaccent);
+    background-color: var(--color-mainAccent);
     height: 25em;
-    width: 100%;
+    width: 110%;
     filter: drop-shadow(0.1rem 0.1rem 20px  rgba(0, 0, 0, 0.7));
 }
 
@@ -350,48 +469,50 @@ main section:nth-of-type(4) h2{
 }
 
 main section:nth-of-type(4) legend{
-    color: var(--color-witteh2);
+    color: var(--color-lightText);
     font-size: 1.2rem;
     text-transform: uppercase;
-    font-family: 'kawasakisport';
+    font-family: 'kawasakimain';
     width: 100%;
     margin: 4em 0;
+    margin-top: 5.5em;
 }
 
 main section:nth-of-type(4) fieldset label{
-    color: var(--color-witteh2);
+    color: var(--color-lightText);
     font-size: 1rem;
     margin-right: 0.5em;
-    font-family: 'kawasakibasic';
+    font-family: 'kawasakimain';
     text-transform: uppercase;
     font-weight: bold;
 }
 
 /* Hulp van MDN hoe ik de type=text moet aanspreken */
-input[type="text"] {
-    width: 100%;
+section form fieldset input[type="text"] {
+    width: 170%;
     padding: 1em;
     margin-bottom: 1em;
     font-size: 1rem;
     border: none;
-    background-color: var(--color-donkergrijsinfo);
-    color: var(--color-kawasakikleur);  
+    background-color: var(--color-secondAccent);
+    color: var(--color-kawasakikleur);
+    margin-left: -4.5em;
 }
   
 input[type="text"]::placeholder {
-    color: var(--color-grijsaccent);
+    color: var(--color-placeholderTime);
 }
 
 select {
-    width: 100%;
+    width: 170%;
     padding: 1em;
     font-size: 1rem;
     border: none;
-    background-color: var(--color-donkergrijsinfo);
-    color: var(--color-witteaccent);
+    background-color: var(--color-secondAccent);
+    color: var(--color-lightText);
     appearance: none;
     margin-bottom: 2em;
-
+    margin-left: -4.5em;
     /* Hulp van broer */
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
@@ -401,7 +522,7 @@ select {
 
 input[type="text"]:focus {
     border-color: var(--color-kawasakikleur);
-    background-color: var(--color-witteaccent); 
+    background-color: var(--color-thirdAccent); 
 }
 
 
@@ -411,13 +532,13 @@ main section:nth-of-type(4) a{
     margin: auto;
     background-color: var(--color-kawasakikleur);
     border: none;
-    color: var(--color-witteaccent);
-    font-family: 'kawasakibasic';
+    color: var(--color-lightText);
+    font-family: 'kawasakimain';
     text-decoration: none;
-
     font-size: 1rem;
     text-transform: uppercase;
     padding: 0.8em 1.5em;
+    margin-right: 4em;
     font-weight: bold;
     margin-bottom: 6em;
     z-index: 1;
@@ -429,6 +550,25 @@ main section:nth-of-type(4){
 }
 
 
+@media only screen and (min-width: 900px) {
+
+    main section:nth-of-type(4) form{
+        background-image: url(../images/find-dealer-img.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 250%;
+        margin-left: -15em;
+    }
+
+    main section:nth-of-type(4) img{
+        position: absolute;
+        top: 0;
+        left: 25em;
+    }
+}
+
+
+
 
 /* **********
 Styling form 4
@@ -436,7 +576,7 @@ Styling form 4
 
 main section:nth-of-type(5){
     display: grid;
-    background-color: var(--color-donkergrijsinfo);
+    background-color: var(--color-mainAccent);
     width: 90%;
     margin: auto;
     filter: drop-shadow(0.1rem 0.1rem 20px  rgba(0, 0, 0, 0.7));
@@ -446,23 +586,23 @@ main section:nth-of-type(5){
 main section:nth-of-type(5) h2{
     margin-top: 2em;
     text-align: start;
-    color: var(--color-witteh2);
-    font-family: 'kawasakisportnobold';
+    color: var(--color-lightText);
+    font-family: 'kawasakimain';
     margin-top: 1em;
     margin-bottom: 1.5em;
     margin-left: .5em;
 }
 main section:nth-of-type(5) h3{
     text-align: start;
-    color: var(--color-witteh2);
-    font-family: 'kawasakisportnobold';
+    color: var(--color-lightText);
+    font-family: 'kawasakimain';
     font-size: 2em;
     margin-left: .5em;
     
 }
 main section:nth-of-type(5) p{
     text-align: start;
-    color: var(--color-witteaccent);
+    color: var(--color-thirdAccent);
     font-family: 'basictext';
     margin-top: 1em;
     margin-left: 1em;
@@ -505,8 +645,8 @@ main section:nth-of-type(5) a{
     margin: auto;
     background-color: var(--color-kawasakikleur);
     border: none;
-    color: var(--color-witteaccent);
-    font-family: 'kawasakibasic';
+    color: var(--color-lightText);
+    font-family: 'kawasakimain';
     margin-bottom: 4em;
     text-decoration: none;
 
@@ -528,11 +668,11 @@ main section:nth-of-type(6) {
     place-content: center;
     margin: auto;
     width: 90%;
-    /* filter: drop-shadow(0.1rem 0.1rem 20px  rgba(0, 0, 0, 0.7)); */
 }
 
 
 main section:nth-of-type(6) h2{
+    color: var(--color-text);
     place-content: center;
     grid-column: 2;
     display: grid;
@@ -544,18 +684,30 @@ main section:nth-of-type(6) h2{
     margin-top: 3em;
 }
 
+main section:nth-of-type(6) h3{
+   padding-top: 1em;
+   padding-bottom: 3em;
+}
+
+main section:nth-of-type(6) time{
+    text-transform: uppercase;
+    color: var(--color-placeholderTime);
+}
+
 main section:nth-of-type(6) article{
     padding-bottom: 2em;
     grid-column: 1/-2;
     padding: 1.5em;
-    background-color: var(--color-witteaccent);
+    background-color: var(--color-sectionArticlebg);
+    font-family: 'kawasakimain';
+    padding-bottom: 5em;
 }
 
 main section:nth-of-type(6) img{
     width: 100%;
     grid-column: 3;
     margin: auto;
-    background-color: var(--color-witteaccent);
+    background-color: var(--color-sectionArticlebg);
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -566,15 +718,17 @@ main section:nth-of-type(6) img{
 main section:nth-of-type(6) article a{
     color: var(--color-kawasakikleur);
     text-decoration: none;
+    font-size: .8em;
+    font-family: 'kawasakimain';
 }
 
 main section:nth-of-type(6) a:nth-child(8){
     cursor: pointer;
     margin: auto;
-    background-color: var(--color-kawasakikleur);
+    background-color: var(--color-buttons);
     border: none;
-    color: var(--color-witteaccent);
-    font-family: 'kawasakibasic';
+    color: var(--color-reversedTextColor);
+    font-family: 'kawasakimain';
     margin-top: 2em;
     grid-column: 2;
     text-align: center;
@@ -594,51 +748,80 @@ FORM STYLING #6
 ************ */
 
 
-main section:nth-of-type(7) {
+main section:nth-of-type(7) section{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto;
-    background-color: var(--color-donkergrijsinfo);
+    background-color: var(--color-mainAccent);
     position: relative;
     gap: 1rem;
     overflow-x: auto;
     padding: 1rem;
+    background-image: none;
 }
 
 main section:nth-of-type(7) h2 {
     top: 0;
     grid-column: 1 / -1;
-    color: var(--color-witteh2);
+    color: var(--color-lightText);
     font-size: 2rem;
     text-transform: uppercase;
     margin: 0;
-    background-color: var(--color-donkergrijsinfo);
+    background-color: var(--color-mainAccent);
     z-index: 2;
     padding: 1rem;
     text-align: center;
+    position:static;
+    
 }
 
-main section:nth-of-type(7) article {
-    background-color: var(--color-donkergrijsaccent);
+main section:nth-of-type(7) section article {
+    background-color: var(--color-secondAccent);
     grid-row: 2;
     width: 15em; 
+    margin-bottom: 1em;
+    height: 27em;
 }
 
 main section:nth-of-type(7) article img {
     width: 15em; 
     cursor: pointer;
+    margin-bottom: 1em;
+}
+
+main section:nth-of-type(7) article img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s
 }
 
 main section:nth-of-type(7) h3 {
-    color: var(--color-wittetext);
+    font-family: 'kawasakimain';
+    color: var(--color-lightText);
+    padding: 1rem;
+    margin-top: .5em;
+    padding-bottom: 5em;
+}
+
+main section:nth-of-type(7) article time {
+    padding: 1rem;
+    text-transform: uppercase;
+    color: var(--color-placeholderTime);
+    font-family: 'kawasakimain';
+}
+
+main section:nth-of-type(7) section article a{
+    cursor: pointer;
+    margin: auto;
+    color: var(--color-kawasakikleur);
+    font-family: 'kawasakimain';
+    text-decoration: none;
+    font-size: .8rem;
+    text-transform: uppercase;
     padding: 1rem;
 }
 
-main section:nth-of-type(7) article p {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    color: var(--color-wittetext);
-    padding: 1em;
+main section:nth-of-type(7) h2{
+    overflow-x: auto;
 }
 
 @media only screen and (min-width: 850px) {
@@ -651,33 +834,12 @@ main section:nth-of-type(7) article p {
 
 
 
-
-
 /* *************
-LIGHT & DARK
+LIGHT & DARK BG
 ************* */
 
 @media (prefers-color-scheme: dark) {
 	:root body{
-		--color-zwarteh2: white;
 		background-image: url(../images/background-img-dark.jpg);
 	}
-
-    main section:nth-of-type(2) form {
-        background-color: var(--color-donkergrijsinfo);
-        color: var(--color-wittetext);
-    }
-
-    main section:nth-of-type(3) article{
-        background-color: var(--color-donkergrijsinfo);
-        color: var(--color-wittetext);
-    }
-    main section:nth-of-type(6) article{
-        background-color: var(--color-donkergrijsinfo);
-        color: var(--color-wittetext);
-    }
-    main section:nth-of-type(6) img{
-        background-color: var(--color-donkergrijsinfo);
-    }
-
 }

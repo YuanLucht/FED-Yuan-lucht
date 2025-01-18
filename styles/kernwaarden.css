@@ -2,7 +2,7 @@
 Header 
 ************* */
 body{
-    background-color: var(--color-background);
+    background-color: var(--color-bg);
 }
 
 
@@ -18,7 +18,7 @@ body header{
     inset: 0 0 auto;
     padding: 1rem;
     align-items: center;
-    background-color: var(--color-zwarteheader);
+    background-color: var(--color-text);
 }
 
 body nav ul{
@@ -30,7 +30,7 @@ body nav ul li{
 }
 
 body header nav ul li a{
-    font-family: 'basicbold';
+    font-family: 'kawasakimain';
 }
 
 .hamburger {
@@ -42,21 +42,21 @@ body header nav ul li a{
     background: none;
     border: none;
     cursor: pointer;
-    z-index: 2;
+    z-index: 3;
 }
 
 .hamburger span {
     width: 100%;
     height: 20%;
-    background-color: var(--color-witteaccent);
-}  
+    background-color: var(--color-thirdAccent);
+}
 
 nav {
     position: absolute;
     top: 50%;
     right: 0;
-    background-color: var(--color-kawasakikleur);
-    display: none;
+    background-color: var(--color-mainAccent);
+    display: none; 
     z-index: 2; 
 }
 
@@ -64,11 +64,12 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+
 }
 
 nav li {
     padding: 1rem;
-    border-bottom: 0.1em solid var(--color-witteh2);
+    border-bottom: 0.1em solid var(--color-thirdAccent);
 }
 
 nav li:last-child {
@@ -76,12 +77,86 @@ nav li:last-child {
 }
 
 nav a {
-    color: var(--color-witteh2);
+    color: var(--color-thirdAccent);
     text-decoration: none;
+}
+
+nav ul label{
+    display: none;
+}
+
+nav ul input{
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+    font-size: 1rem;
+    border: none;
+    background-color: var(--color-secondAccent);
+    color: var(--color-kawasakikleur);
 }
 
 nav.active {
     display: block;
+}
+
+@media only screen and (min-width: 850px) {    
+
+    header{
+        height: 9.2em;
+    }
+
+	nav {
+        display: flex;
+        justify-content: flex-start; 
+        padding: 0;
+        background: none;
+    }
+    
+    .hamburger {
+        display: none; 
+    }
+
+    nav li {
+        border-bottom: none;
+    }
+
+    nav ul{
+        display: flex;
+        margin: 1em;
+        gap: 1em;
+    }
+    
+    nav ul li a:hover{
+        color: var(--color-kawasakikleur);
+    }
+
+    nav ul input{
+        position: absolute;
+        top: -2em;
+        width: 80%;
+        right: 2.5em;
+    }
+}
+
+@media only screen and (min-width: 1350px){
+    body header{
+        display: flex;
+    }
+
+    nav ul input{
+        display: flex;
+        position: relative;
+        top: -2.6em;
+        height: 3em;
+    }
+
+    nav ul li a{
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        top: -3em;
+    }
+
 }
 
 
@@ -113,7 +188,7 @@ body main form fieldset select {
     border: none;
     appearance: none;
     text-transform: uppercase;
-    color: var(--color-text);
+    color: var(--color-textLD);
     background-repeat: no-repeat;
     background-size: 1em;
 }
@@ -146,7 +221,7 @@ fieldset ul li a {
 }
 
 
-@media (min-width: 1000px) {
+@media (min-width: 850px) {
     select {
         display: none;
     }
@@ -157,6 +232,7 @@ fieldset ul li a {
         text-transform: uppercase;
         font-weight: bold;
         font-size: 1.2em;
+        margin-top: 4em;
     }
 
     fieldset ul li{
@@ -164,6 +240,11 @@ fieldset ul li a {
         width: 8em;
         margin-bottom: 1.5em;
     }
+
+    fieldset ul li a{
+        color: var(--color-textLD);
+    }
+
     fieldset ul li:hover{
         transform: translateX(2em);
         transition: transform 0.3s ease;
@@ -186,7 +267,7 @@ fieldset ul li a {
     }
 
     main section:nth-of-type(1){
-        top: 3em;
+        top: 7.5em;
     }
 }
 
@@ -225,7 +306,6 @@ body main section:nth-of-type(1) h2{
     padding: 2em;
     font-family: 'basicbold';
     font-size: 2em;
-    color: var(--color-zwarteh2);
 }
 
 body main section:nth-of-type(1) blockquote{
@@ -234,7 +314,7 @@ body main section:nth-of-type(1) blockquote{
     line-height: 1.8em;
     max-width: 52ch;
     z-index: -1;
-    color: var(--color-text);
+    color: var(--color-textLD);
 }
 
 body main section:nth-of-type(1) p{
@@ -242,7 +322,7 @@ body main section:nth-of-type(1) p{
     padding: 2em;
     line-height: 2.2em;
     max-width: 52ch;
-    color: var(--color-text);
+    color: var(--color-textLD);
 }
 
 body main section:nth-of-type(1) img{
@@ -280,7 +360,7 @@ body main section:nth-of-type(1) img{
 KERNWAARDEN STUK #2
 ******************* */
 body main section:nth-of-type(2){
-    background-color: var(--color-ligtgrijsfooter);
+    background-color: var(--color-footerLight);
     padding: 1em;
     width: 90%;
     margin: auto;
@@ -297,7 +377,7 @@ body main section:nth-of-type(2) h2{
 }
 
 body main section:nth-of-type(2) h3{
-    color: var(--color-witteh2);
+    color: var(--color-lightText);
     font-family: 'kawasakibasic';
     text-align: left;
     margin-top: 2em;
@@ -307,7 +387,7 @@ body main section:nth-of-type(2) h3{
 @media (min-width: 650px){
     body main section:nth-of-type(2){
         position: absolute;
-        width: 40%;
+        width: 35%;
         right: 0;
     }
 }
@@ -333,7 +413,8 @@ body main section:nth-of-type(3) p{
     padding: 2em;
     line-height: 2.2em;
     width: 52ch;
-    background-color: var(--color-ligtgrijsbg);
+    background-color: var(--color-accentKernwaarden);
+    color: var(--color-textLD);
     margin: auto;
     width: 100%;
 }
@@ -350,16 +431,3 @@ body main section:nth-of-type(3) p{
     
 }
 
-
-
-/* ************
-LIGHT & DARK
-************ */
-
-@media (prefers-color-scheme: dark) {
-	:root body{
-		--color-background: #333;
-        --color-zwarteh2: white;
-        --color-text: white;
-	}
-}
